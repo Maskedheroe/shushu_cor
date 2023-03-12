@@ -1,0 +1,11 @@
+<!--pages/my-shop/my-shop.wxml-->
+<view>
+  <Search placeHolder="商品名称" />
+  <view class="classifier">
+    <Classifier bind:changeClassifier="handleChangeClassifier" isReadyProp="{{isReady}}" />
+  </view>
+  <view wx:if="{{currentList.length===0}}">
+    <van-empty description="暂无内容"></van-empty>
+  </view>
+  <Card class="list" currentList="{{currentList}}"/>
+</view>

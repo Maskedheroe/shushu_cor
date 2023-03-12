@@ -1,0 +1,4 @@
+<!--pages/trade-edit/trade-edit.wxml-->
+<view>
+  <info-edit userInfo="{{userInfo}}" iconfont="iconfont" icon-add="icon-add" icon-delete="icon-delete" />
+</view>

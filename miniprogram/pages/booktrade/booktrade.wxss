@@ -1,0 +1,71 @@
+/* pages/booktrade/booktrade.wxss */
+.clear{clear: both;overflow: hidden;}
+.banner{height:300px;}
+.slide-image {width:100%;height:100%;}
+ 
+/*新旧程度*/
+.fenxiang{ float: right;height:50px;line-height:50px;color:black;font-size: 20px; }
+.flex{ display: -webkit-box;display: -webkit-flex;  display: -ms-flexbox; display: flex; width: 100%;}
+.flex>.sub{ -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1; overflow: hidden;}
+ 
+.info-title{margin-top: 50rpx;margin-left: 40rpx;margin-bottom: 50rpx;}
+ 
+.info-price{border-bottom:1px solid #F6F6F6;background: #fff;padding:0px 15px;}
+.price{ float:left;height:50px;line-height:50px;color:black;font-size: 25px; }
+ 
+.price em{font-size:12px;margin-left:20px;}
+.flex{ position: relative; width: auto; margin: 0 -15px; padding:3px 15px 0;}
+
+.list_item{position:relative;padding:15px 10px;background:#fff; border-bottom:1px solid #f5f5f5;}
+ 
+.details_box{ margin-top:10px;padding:0 15px;font-size: 13px;background:#fff;}
+ 
+.add-cart .add-cart-btn{margin-top: 200rpx;
+  background:red;color: #fff;border-radius: 50px; padding:0px;width:100px;height:35px; line-height: 35px;margin-left:70rpx;}
+
+.contact .contact-btn{margin-top: 200rpx;
+    background:red;color: #fff;border-radius: 50px; padding:0px;width:100px;height:35px; line-height: 35px;margin-left:20rpx;}
+.gwc{
+  display:flex;
+  flex-direction: column;
+}
+.cart{
+  height: 15rpx;
+  width: 15rpx;
+}
+.store{
+  background-color: rgb(247, 242, 242);
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  font-size: 30rpx;
+}
+.shop{
+  margin-left: 100rpx;
+  height:50rpx;
+  width:50rpx;
+}
+.zi{
+  margin-left:50rpx;
+}
+ 
+/* 点击后的样式 */
+.active {
+  color: #8a8a8a !important;
+}
+.left{
+  margin-top: 180rpx;
+  margin-left: 100rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.save{
+  height:60rpx;
+  width:60rpx;
+}
+.saveText{
+  font-size: 30rpx;
+}

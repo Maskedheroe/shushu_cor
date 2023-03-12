@@ -1,0 +1,18 @@
+page {
+  background-color: #F1F1F1;
+}
+.img {
+  width: 100%;
+}
+.classifier {
+  height: 100rpx;
+}
+.booklist {
+  display: flex;
+  flex-wrap: wrap;
+  font-display: row;
+  background: #F1F1F1;
+}
+.bookitem {
+  flex: 1;
+}

@@ -1,0 +1,2 @@
+<!--pages/service-helper/service-helper.wxml-->
+<button open-type="contact">咨询</button>

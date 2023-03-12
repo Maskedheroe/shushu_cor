@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "Classifier": "/components/classifier/classifier",
+    "Search": "/components/search/search",
+    "van-empty": "@vant/weapp/empty/index",
+    "Card": "../../components/card/card"
+  },
+  "navigationBarTitleText": "我的小店",
+  "enablePullDownRefresh": true
+}

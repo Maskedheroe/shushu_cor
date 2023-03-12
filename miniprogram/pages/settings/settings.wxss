@@ -1,0 +1,51 @@
+/* pages/settings/settings.wxss */
+.avatar{
+  margin-top: 50rpx;
+  width: 80px;
+  height: 80px;
+  padding:0;
+  background: none;
+}
+.all{
+  margin-top: 100rpx;
+  display: flex;
+  border-top:1rpx solid rgb(253, 2, 2);
+  border-bottom:1rpx solid rgb(253, 2, 2);
+  background:white;
+}
+
+.avatar image{
+  width: 80px;
+  height: 80px;
+}
+.input1{
+  width: 80%;
+  height: 80rpx;
+  margin-left:150rpx;
+  padding-left: 15px;
+}
+.nicheng{
+  margin-top: 20rpx;
+  margin-left: 40rpx;
+  position: absolute;
+}
+.wenzi{
+  position: absolute;
+}
+.all1{
+  display: flex;
+  border-bottom:1rpx solid rgb(253, 2, 2);
+  background:white;
+}
+.tui{
+  position: relative;
+  margin-top:20rpx;
+  margin-left: 180rpx;
+  margin-bottom: 20rpx;
+}
+.confirm{
+  width:300rpx;
+  background-color: rgb(206, 21, 21);
+  color:white;
+  margin-top:400rpx;
+}

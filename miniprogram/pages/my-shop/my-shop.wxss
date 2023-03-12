@@ -1,0 +1,22 @@
+/* pages/my-shop/my-shop.wxss */
+page {
+  background-color: #fff;
+}
+.classifier {
+  height: 60rpx;
+}
+
+.container {
+  margin-bottom: 30rpx;
+}
+
+.time {
+  position: absolute;
+  bottom: 20rpx;
+  right: 214rpx;
+  color: #ccc;
+}
+.list {
+  position: relative;
+  top: 30rpx;
+}

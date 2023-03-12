@@ -1,0 +1,28 @@
+<!--pages/settings/settings.wxml-->
+<button class="avatar" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+  <!--<image src="{{avatarUrl}}"></image>-->
+  <open-data type="userAvatarUrl"></open-data>
+</button>
+<view class="all">
+  <view class="nicheng">昵称</view>
+  <input class="input1" placeholder="好的昵称会吸引更多人哦" placeholder-class="wenzi" bindtap="getData"/>
+</view>
+<view class="all1">
+<view class="nicheng">校区</view>
+<picker bindchange="changexiaoqu" value="{{xiaoquIndex}}" range="{{xiaoquList}}">
+  <view class="tui">{{xiaoquList[xiaoquIndex]}}</view>
+ </picker>
+</view>
+<view class="all1">
+<view class="nicheng">学院</view>
+<picker bindchange="changexueyuan" value="{{xueyuanIndex}}" range="{{xueyuanList}}">
+  <view class="tui">{{xueyuanList[xueyuanIndex]}}</view>
+ </picker>
+</view>
+<view class="all1">
+<view class="nicheng">年级</view>
+<picker bindchange="changegrade" value="{{gradeIndex}}" range="{{gradeList}}">
+  <view class="tui">{{gradeList[gradeIndex]}}</view>
+ </picker>
+</view>
+<button class="confirm" bindtap="save">保存信息</button>

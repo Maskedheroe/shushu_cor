@@ -1,0 +1,6 @@
+<!--components/publish/publish.wxml-->
+<view>
+  <view class="publish-container" bind:tap="handlePublish">
+    <i class="iconfont icon-fabu"></i>
+  </view>
+</view>

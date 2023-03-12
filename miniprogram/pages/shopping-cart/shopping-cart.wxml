@@ -1,0 +1,43 @@
+<view class="product-container">
+  <view class="product-list" style='height:{{height}}px'>
+    <view class="product-item" wx:for="{{slideProductList}}" wx:for-index="index" wx:key='slideProductList'>
+      <slide-delete pid="{{item._id}}" bindaction="handleSlideDelete" wx:key='slideProductList'>
+        <view class="product-item-wrap1">
+          <view class="product-item-wrap2">
+            <icon type="{{item.select}}" size="19" data-index="{{index}}" data-select="{{item.select}}" bindtap="change" color="red" />
+            <navigator class='store' url="../shop/shop?+">
+              <image class="shop" src="/images/shop.png"></image>
+              <view class="zi">{{item.store.name}}></view>
+            </navigator>
+          </view>
+          <view class="product-item-wrap3">
+            <icon type="{{item.select}}" size="19" data-index="{{index}}" data-select="{{item.select}}" bindtap="change" color="red" />
+            <navigator class="product-item-wrap" url='../booktrade/booktrade?bookid={{item._id}}'>
+              <view class="product_img">
+                <image src="{{item.imgs[0]}}" class='goods-img' mode="widthFix"></image>
+              </view>
+              <view class="product-movable-item">
+                <view class="goods-name">{{item.name}}</view>
+                <view class="goods-type">
+                  <text>{{item.old}}新 {{item.note}}笔记 {{item.bargain=='true'?'不议价':'可议价'}}</text>
+                </view>
+                <view class="goods-price">￥{{item.price}}</view>
+              </view>
+          </navigator>
+        </view>
+    </view>
+    </slide-delete>
+  </view>
+</view>
+<view class="cart-fixbar">
+  <view class="allSelect">
+    <icon type="{{allSelect}}" size="19" data-select="{{allSelect}}" bindtap="allSelect" color='#fff' />
+    <view class="allSelect-text">全选</view>
+  </view>
+  <view class="order" bindtap="deleteBook">
+  <view class="orders">
+      删除
+    </view>
+  </view>
+</view>
+</view>

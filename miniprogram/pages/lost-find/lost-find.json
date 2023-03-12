@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "Search": "/components/search/search",
+    "Publish": "/components/publish/publish",
+    "TradeCard": "/components/tradeCard/tradeCard",
+    "TradeCtrl": "/components/trade-ctrl/trade-ctrl"
+  },
+  "navigationBarTitleText": "发现",
+  "enablePullDownRefresh": true
+}

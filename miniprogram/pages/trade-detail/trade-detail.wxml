@@ -1,0 +1,36 @@
+<!--pages/trade-detail/trade-detail.wxml-->
+<scroll-view class="container" scroll-y="true">
+  <view class="blog-card">
+    <TradeCard tradeitem="{{tradeInfo}}" wx:if="tradeInfo"></TradeCard>
+  </view>
+  <view class="complete">
+    <van-button wx:if="{{isPublisher === 'true'}}" bindtap="handleDelete" type="info" block>
+      已完成
+    </van-button>
+  </view>
+  <view class="tab">
+    <view class="tab-item">
+      评论列表
+    </view>
+    <van-empty wx:if="{{!commentList.length}}"/>
+    <view class="comment-list">
+      <block wx:for="{{commentList}}" wx:key="_id">
+        <view class="comment">
+          <view class="comment-title">
+            <image src="{{item.avatarUrl}}" mode="aspectFill" class="comment-portrait" />
+            <text class="comment-nickname">{{item.nickname}}</text>
+          </view>
+          <view class="comment-content">
+            {{item.content}}
+          </view>
+          <view class="comment-time">
+            {{item.createTime}}
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+</scroll-view>
+<view class="blog-ctrl">
+  <TradeCtrl tradeId="{{tradeInfo._id}}" iconfont="iconfont" icon-comment="icon-comment" icon-share_light="icon-share_light" bind:refreshComment="_getTradeDetail"></TradeCtrl>
+</view>

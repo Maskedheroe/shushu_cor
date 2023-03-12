@@ -1,0 +1,42 @@
+<!--pages/booktrade/booktrade.wxml-->
+<!--商品幻灯片-->
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" class="banner" duration="{{duration}}" circular="{{duration}}">
+  <block wx:for="{{good.imgs}}" wx:key="good">
+    <swiper-item>
+      <image src="{{imghref}}{{good.imgs}}" class="slide-image" mode="aspectFill" data-src='{{imghref}}{{item.img}}' bindtap="previewImage" />
+    </swiper-item>
+  </block>
+</swiper>
+<!--商品幻灯片 end-->
+<!--商品信息-->
+<view class="info-price clear">
+  <view class='price'>￥{{good.price}} </view>
+  <view class='fenxiang'>{{good.old}}新</view>
+</view>
+<view class="info-title">
+  <text>{{good.name}} {{good.old}}新 {{good.material}} {{good.note}}笔记 {{good.bargain=='true'?'不议价':'可议价'}}</text>
+</view>
+<!--店铺-->
+<!--<view class='store' >-->
+
+<navigator class='store' url="../shop/shop?+">
+  <image class="shop" src="/images/shop.png"></image>
+  <view class="zi">{{good.store.name}}</view>
+</navigator>
+
+<!--底部浮动 start-->
+<view class="foot-nav mt15">
+  <view class="flex con gridXt tc">
+    <navigator class="left" url="../shopping-cart/shopping-cart">
+      <image class="save" src="/images/cart.png"></image>
+      <text class="saveText">购物车</text>
+    </navigator>
+
+    <view class="add-cart sub f16">
+      <button class="add-cart-btn" data-id="{{item}}" bindtap='addShop'>加入购物车</button>
+    </view>
+    <view class="contact sub f16">
+      <button class="contact-btn" bindtap='copyText' data-key="{{item.name}}">联系方式</button>
+    </view>
+  </view>
+</view>

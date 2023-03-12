@@ -1,0 +1,37 @@
+/* pages/trade-detail/trade-detail.wxss */
+.tab-item {
+  color: gray;
+}
+.collect {
+  font-size: 28px;
+  color: red;  
+}
+.complete {
+  width: 100%;
+  height: 100rpx;
+  margin-top: 10rpx;
+  border-radius: 12rpx;
+  overflow: hidden;
+}
+.tab {
+  margin-top: 100rpx;
+  margin-left: 20rpx;
+}
+.comment-list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 80rpx;
+}
+.comment {
+  width: 100%;
+}
+.comment-portrait {
+  width: 100rpx;
+  height: 100rpx;
+}
+.blog-ctrl {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}

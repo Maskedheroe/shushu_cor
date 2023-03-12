@@ -1,0 +1,32 @@
+<!--pages/search/search.wxml-->
+<!--<view class="head">
+<view class="head_input">
+  <image class="ic" src='/images/search.png'></image>
+    <input type="text" placeholder="搜索你想要的宝贝" placeholder-class="place_holder" bindinput='search' value="{{search}}"/>
+    <van-button color="linear-gradient(to right, #4bb0ff, #6149f6)" class="searchbtn" size="small" slot="action" type="info" bindtap="handleSearch">搜索</van-button>
+  </view>
+</view>-->
+<van-search placeholder="搜索你想要的宝贝" use-action-slot bindchange='onChange' value="{{search}}">
+  <van-button color="linear-gradient(to right, #4bb0ff, #6149f6)" class="searchbtn" size="small" slot="action" type="info" bindtap="handleSearch">搜索</van-button>
+</van-search>
+<view class="con">
+  <view class="title">热门搜索</view>
+  <view class="fl">
+    <block wx:for="{{hot_list}}" wx:key="index">
+      <view class="c_item color" data-index="{{index}}" catchtap="getSearch">{{item}}</view>
+    </block>
+  </view>
+
+  <view wx:if="{{list.length>0}}">
+    <view class="flexx">
+      <view class="title">搜索历史</view>
+      <view catchtap="remove" class="clear">清空历史</view>
+    </view>
+
+    <view class="fl">
+      <block wx:for="{{list}}" wx:key="index">
+        <view class="c_item" data-index="{{index}}" catchtap="getSearchOne">{{item}}</view>
+      </block>
+    </view>
+  </view>
+</view>
